@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "devCommand": "uvicorn main:app --host 0.0.0.0 --port 5000",
-  "builds": [{ "src": "bellpepper.py", "use": "@vercel/python" }]
+  "builds": [{ "src": "bellpepper.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/(.*)", "dest": "bellpepper.py" }]
 }
