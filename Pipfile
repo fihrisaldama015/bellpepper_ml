@@ -64,4 +64,4 @@ virtualenv = "==20.27.1"
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.12"
