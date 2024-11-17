@@ -1,0 +1,6 @@
+{
+  "version": "1",
+  "builds": [
+    {"src": "bellpepper.py", "use": "@vercel/python"}
+  ]
+}
