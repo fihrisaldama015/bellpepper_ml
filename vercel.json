@@ -1,9 +1,5 @@
 {
   "version": 2,
   "devCommand": "uvicorn main:app --host 0.0.0.0 --port 5000",
-  "functions": {
-    "bellpepper.py": {
-      "runtime": "python@3.9"
-    }
-  }
+  "builds": [{ "src": "bellpepper.py", "use": "@vercel/python" }]
 }
