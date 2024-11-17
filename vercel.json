@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {"src": "bellpepper.py", "use": "@vercel/python"}
-  ]
+  "builds": [{ "src": "bellpepper.py", "use": "@vercel/python" }],
+  "redirects": [{ "source": "/", "destination": "/bellpepper.py" }]
 }
