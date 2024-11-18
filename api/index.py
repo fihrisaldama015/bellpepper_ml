@@ -2,6 +2,7 @@
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 import io
 from PIL import Image
@@ -12,6 +13,7 @@ model = load_model("model_cnn_paprika.h5")
 # =============================== READ MODEL ===============================
 
 app = Flask(__name__)
+CORS(app)  # This will enable CORS for all routes and origins
 
 @app.route('/')
 def index():
